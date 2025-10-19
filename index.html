@@ -23,17 +23,22 @@
   }
 
   .text {
-    position: absolute;
-    top: -10%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #ff4fa3;
-    font-weight: 700;
-    font-size: clamp(24px, 5vw, 32px);
-    max-width: 90vw;
-    text-shadow: 0 0 10px rgba(255, 100, 180, 0.8);
-    animation: fall linear forwards;
+  position: absolute;
+  top: -10%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffb6c1;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 32px);
+  max-width: 90vw;
+  /* viền sáng + phát sáng */
+  -webkit-text-stroke: 0.8px #fff0f5; /* viền mảnh sáng nhẹ */
+  text-shadow: 
+    0 0 8px #ff8fc1, 
+    0 0 15px #ff5ba0,
+    0 0 25px #ff8fc1;
+  animation: fall linear forwards;
   }
 .flower {
   position: absolute;
